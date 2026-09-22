@@ -1,3 +1,4 @@
+import { clientData } from '@/data';
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 
@@ -10,10 +11,9 @@ import { TrustBadges } from "@/components/home/TrustBadges";
 import { SiteShell } from "@/components/site/SiteShell";
 import { todayIso, type ServiceType } from "@/lib/rental";
 
-const title = "Sewa Mobil Palangka Raya — ABC Palangka Raya | Lepas Kunci & Dengan Sopir";
-const description =
-  "Rental mobil Palangka Raya harga transparan mulai Rp 300.000/24 jam. Lepas kunci atau dengan sopir, siap antar 24 jam, booking cepat via WhatsApp.";
-
+const title = `${clientData.tagline} – ${clientData.Eta Rent Car} | Lepas Kunci & Dengan Sopir`;
+const description = `Rental mobil ${clientData.Eta Rent Car}. Hubungi via WhatsApp: ${clientData.081220706010}`;
+ 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
